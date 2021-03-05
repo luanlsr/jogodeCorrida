@@ -9,14 +9,14 @@ window.onload = function() {
   resetCars(car1, car2);
   
   button.addEventListener('click', function () {
-    car1.style.marginLeft = (parseInt(car1.style.marginLeft) + (Math.random() * 100) + 'px');
     car2.style.marginLeft = (parseInt(car1.style.marginLeft) + (Math.random() * 100) + 'px');
+    car1.style.marginLeft = (parseInt(car1.style.marginLeft) + (Math.random() * 100) + 'px');
 
-    if(parseInt(car1.style.marginLeft) > 1480) {
+    if(parseInt(car1.style.marginLeft) > 1780) {
       alert('Carro VERMELHO GANHOU!');
       resetCars(car1, car2);
     }
-    if(parseInt(car1.style.marginLeft) > 1480) {
+    if(parseInt(car1.style.marginLeft) > 1780) {
       alert('Carro AZUL GANHOU!');
       resetCars(car1, car2);
     }
