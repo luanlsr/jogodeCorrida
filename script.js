@@ -12,7 +12,7 @@ window.onload = function() {
     car2.style.marginLeft = (parseInt(car1.style.marginLeft) + (Math.random() * 100) + 'px');
     car1.style.marginLeft = (parseInt(car1.style.marginLeft) + (Math.random() * 100) + 'px');
 
-    if(parseInt(car1.style.marginLeft) > 1780) {
+    if(parseInt(car2.style.marginLeft) > 1780) {
       alert('Carro VERMELHO GANHOU!');
       resetCars(car1, car2);
     }
